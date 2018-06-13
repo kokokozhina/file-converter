@@ -4,10 +4,8 @@ import org.json.JSONObject;
 import org.json.XML;
 
 import java.io.*;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 
-public class ConverterXml extends Converter {
+public class ConverterXml extends DefaultConverter {
     @Override
     public String convertJsonToType(InputStream inputStream) {
         String str = inputStreamToString(inputStream);

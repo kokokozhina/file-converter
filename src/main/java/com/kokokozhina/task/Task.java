@@ -1,27 +1,30 @@
 package com.kokokozhina.task;
 
-
 import com.kokokozhina.converter.Converter;
+import org.apache.log4j.Logger;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.concurrent.Callable;
 
-public class Task {
+
+public class Task implements Runnable {
+
+    private final static Logger logger = Logger.getLogger(Task.class);
+
     private InputStream in;
     private OutputStream out;
     private Converter converterIn;
     private Converter converterOut;
-    private Boolean status;
+    private String status;
 
     public Task(InputStream in, OutputStream out, Converter cIn, Converter cOut) {
         this.in = in;
         this.out = out;
         this.converterIn = cIn;
         this.converterOut = cOut;
-        this.status = false;
+        this.status = "Raw";
     }
 
     public InputStream getIn() {
@@ -56,14 +59,32 @@ public class Task {
         this.converterOut = converterOut;
     }
 
-    public Boolean getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Boolean status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
+    @Override
+    public void run() {
+        if (getStatus() != "Raw") {
+            System.out.println(getStatus());
+            return;
+        }
+
+        try {
+            setStatus("In progress");
+            String s = converterIn.convertTypeToJson(in);
+            s = converterOut.convertJsonToType(new ByteArrayInputStream(s.getBytes()));
+            out.write(s.getBytes());
+            setStatus("Done");
+        } catch (IOException ex) {
+            logger.error("Exception in writing to file: ", ex);
+        }
+
+    }
 
 }
 

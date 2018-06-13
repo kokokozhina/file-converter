@@ -1,27 +1,36 @@
 package com.kokokozhina.handler;
 
 import com.kokokozhina.task.Task;
-import com.kokokozhina.task.TaskRunnable;
+import org.apache.log4j.Logger;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 public class Handler {
 
-    ExecutorService service;
+    private final static Logger logger = Logger.getLogger(Task.class);
 
-    public Handler() {
-        this.service = Executors.newCachedThreadPool();
-    }
-
-    public Handler(int n) {
-        this.service = Executors.newFixedThreadPool(n);
-    }
+    private ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(4);
 
     public void addTask(Task t) {
-        service.submit(new TaskRunnable(t));
+        executor.submit(t);
     }
 
+    public void killExecutor() throws InterruptedException {
+        while(executor.getActiveCount() > 0 || executor.getQueue().size() > 0) {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException ex) {
+                logger.error("Interrupting sleep of a thread: ", ex);
+            }
+        }
+        executor.shutdown();
+    }
 
+    public void printCurrentTasks() {
+        System.out.println("Tasks that are being executed : " + executor.getActiveCount());
+    }
+
+    public void printTasksInQueue() {
+        System.out.println("Tasks in queue : " + executor.getQueue());
+    }
 }
