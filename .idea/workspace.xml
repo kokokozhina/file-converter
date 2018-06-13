@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="86edba1b-8739-42c4-8ad4-8bd40979d720" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/json/house.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json/quiz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/json/house.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xml/house.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xml/quiz.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kokokozhina/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kokokozhina/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kokokozhina/converter/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kokokozhina/converter/DefaultConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kokokozhina/converter/ConverterXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kokokozhina/converter/ConverterXml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kokokozhina/handler/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kokokozhina/handler/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kokokozhina/task/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kokokozhina/task/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kokokozhina/task/TaskRunnable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kokokozhina/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kokokozhina/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kokokozhina/converter/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kokokozhina/converter/Converter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kokokozhina/converter/ConverterXml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kokokozhina/converter/ConverterXml.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kokokozhina/handler/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kokokozhina/handler/Handler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kokokozhina/task/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kokokozhina/task/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kokokozhina/task/TaskRunnable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xml/quiz.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/xml/quiz.xml" afterDir="false" />
-    </list>
+    <list default="true" id="86edba1b-8739-42c4-8ad4-8bd40979d720" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -371,16 +350,15 @@
       <workItem from="1528624248341" duration="596000" />
       <workItem from="1528636863516" duration="3913000" />
       <workItem from="1528724782454" duration="34328000" />
-      <workItem from="1528894595362" duration="3429000" />
+      <workItem from="1528894595362" duration="3656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62209000" />
+    <option name="totallyTimeSpent" value="62436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="928" height="1056" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -392,10 +370,10 @@
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.28108108" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32864866" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32864866" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.34126985" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.34126985" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
