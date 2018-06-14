@@ -15,7 +15,7 @@ public class Handler {
         executor.submit(t);
     }
 
-    public void killExecutor() throws InterruptedException {
+    public void killExecutor() {
         while(executor.getActiveCount() > 0 || executor.getQueue().size() > 0) {
             try {
                 Thread.sleep(100);
