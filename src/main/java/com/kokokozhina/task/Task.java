@@ -80,6 +80,8 @@ public class Task implements Runnable {
             s = converterOut.convertJsonToType(new ByteArrayInputStream(s.getBytes()));
             out.write(s.getBytes());
             setStatus("Done");
+            in.close();
+            out.close();
         } catch (IOException ex) {
             logger.error("Exception in writing to file: ", ex);
         }
